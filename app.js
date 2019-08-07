@@ -4,6 +4,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const helmet = require("helmet");
+const cors = require("cors");
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
@@ -14,6 +15,7 @@ const eraseDatabaseOnSync = true;
 
 const app = express();
 app.use(helmet());
+app.use(cors());
 
 app.use(async (req, res, next) => {
   req.context = {

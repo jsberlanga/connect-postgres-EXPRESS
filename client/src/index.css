@@ -1,0 +1,20 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  background: #fafafa;
+  color: #19214b;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 90rem;
+}
+
+li {
+  list-style: none;
+}
