@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  include navbar
+
+  h1= title
+
+  form(name="add-message", method="post")
+    div
+      span.input
+        span.label Create new message
+        input(type="text", name="text")
+      span.actions
+        input(type="submit", value="add")
+
